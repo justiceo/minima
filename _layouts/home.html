@@ -8,7 +8,8 @@ layout: base
   {%- endif -%}
 
   {{ content }}
-
+ 
+  <h2>Customize the site homepage by modifying this file. Copied from https://github.com/jekyll/minima/blob/master/_layouts/home.html</h2>
 
   {% if site.paginate %}
     {% assign posts = paginator.posts %}
@@ -21,8 +22,6 @@ layout: base
     {%- if page.list_title -%}
       <h2 class="post-list-heading">{{ page.list_title }}</h2>
     {%- endif -%}
-
-  <h2>Customize the site homepage by modifying this file. Copied from https://github.com/jekyll/minima/blob/master/_layouts/home.html</h2>
   
     <ul class="post-list">
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
